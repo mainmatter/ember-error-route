@@ -1,0 +1,24 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":pinOnlyDevDependencies",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":semanticCommitsDisabled",
+    "github>Turbo87/renovate-config:automergeCaretConstraint",
+    "github>Turbo87/renovate-config:commitTopics",
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^.github/workflows/[^\\.]+\\.ya?ml$"],
+      "matchStrings": ["PNPM_VERSION:\\s*(?<currentValue>.*?)\n"],
+      "depNameTemplate": "pnpm",
+      "datasourceTemplate": "npm",
+    },
+  ],
+}
