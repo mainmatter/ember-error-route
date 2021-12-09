@@ -1,12 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@babel/eslint-parser': 7.16.3
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.6.0
   '@embroider/test-setup': 0.48.1
   '@glimmer/component': 1.0.4
   '@glimmer/tracking': 1.0.4
-  babel-eslint: 10.1.0
   broccoli-asset-rev: 3.0.0
   ember-auto-import: 2.2.4
   ember-cli: 3.28.4
@@ -47,12 +47,12 @@ dependencies:
   ember-cli-htmlbars: 6.0.1
 
 devDependencies:
+  '@babel/eslint-parser': 7.16.3_eslint@7.32.0
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.6.0
   '@embroider/test-setup': 0.48.1
   '@glimmer/component': 1.0.4
   '@glimmer/tracking': 1.0.4
-  babel-eslint: 10.1.0_eslint@7.32.0
   broccoli-asset-rev: 3.0.0
   ember-auto-import: 2.2.4_webpack@5.65.0
   ember-cli: 3.28.4
@@ -125,6 +125,19 @@ packages:
       source-map: 0.5.7
     transitivePeerDependencies:
       - supports-color
+
+  /@babel/eslint-parser/7.16.3_eslint@7.32.0:
+    resolution: {integrity: sha512-iB4ElZT0jAt7PKVaeVulOECdGe6UnmA/O0P9jlF5g5GBOwDVbna8AXhHRu4s27xQf6OkveyA8iTDv1jHdDejgQ==}
+    engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
+    peerDependencies:
+      '@babel/core': '>=7.11.0'
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      eslint: 7.32.0
+      eslint-scope: 5.1.1
+      eslint-visitor-keys: 2.1.0
+      semver: 6.3.0
+    dev: true
 
   /@babel/generator/7.16.0:
     resolution: {integrity: sha512-RR8hUCfRQn9j9RPKEVXo9LiwoxLPYn6hNZlvUOR8tSnaxlD0p0+la00ZP9/SnRt6HchKr+X0fO2r8vrETiJGew==}
@@ -2626,24 +2639,6 @@ packages:
       private: 0.1.8
       slash: 1.0.0
       source-map: 0.5.7
-    dev: true
-
-  /babel-eslint/10.1.0_eslint@7.32.0:
-    resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==}
-    engines: {node: '>=6'}
-    deprecated: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
-    peerDependencies:
-      eslint: '>= 4.12.1'
-    dependencies:
-      '@babel/code-frame': 7.16.0
-      '@babel/parser': 7.16.4
-      '@babel/traverse': 7.16.3
-      '@babel/types': 7.16.0
-      eslint: 7.32.0
-      eslint-visitor-keys: 1.3.0
-      resolve: 1.20.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /babel-generator/6.26.1:
