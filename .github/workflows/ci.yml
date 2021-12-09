@@ -8,6 +8,9 @@ on:
       - "v*"
   pull_request:
 
+env:
+  PNPM_VERSION: 6.19.0
+
 jobs:
   test:
     name: "Tests"
@@ -15,13 +18,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2.4.0
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
       - uses: actions/setup-node@v2.4.0
         with:
           node-version: 12.x
-          cache: npm
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run test:ember
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
@@ -44,9 +52,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2.4.0
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
       - uses: actions/setup-node@v2.4.0
         with:
           node-version: 12.x
-          cache: npm
-      - run: npm ci
-      - run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm ember try:one ${{ matrix.try-scenario }}
