@@ -31,12 +31,12 @@
     "ember-cli-htmlbars": "^6.0.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "7.16.3",
     "@ember/optional-features": "2.0.0",
     "@ember/test-helpers": "2.6.0",
     "@embroider/test-setup": "0.48.1",
     "@glimmer/component": "1.0.4",
     "@glimmer/tracking": "1.0.4",
-    "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "2.2.4",
     "ember-cli": "3.28.4",
