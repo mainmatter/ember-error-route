@@ -14,9 +14,11 @@
 /.eslintignore
 /.eslintrc.js
 /.git/
+/.github/
 /.gitignore
 /.prettierignore
 /.prettierrc.js
+/.release-it.js
 /.template-lintrc.js
 /.travis.yml
 /.watchmanconfig
@@ -30,6 +32,7 @@
 /yarn-error.log
 /yarn.lock
 .gitkeep
+*.tgz
 
 # ember-try
 /.node_modules.ember-try/
