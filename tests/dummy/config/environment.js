@@ -47,5 +47,10 @@ module.exports = function (environment) {
     // here you can enable a production-specific feature
   }
 
+  if (process.env.DEPLOY_TARGET === 'GitHub Pages') {
+    ENV.rootURL = '/ember-error-route';
+    ENV.locationType = 'hash';
+  }
+
   return ENV;
 };
