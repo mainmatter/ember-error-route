@@ -9,7 +9,7 @@ on:
   pull_request:
 
 env:
-  PNPM_VERSION: 6.19.0
+  PNPM_VERSION: 6.23.6
 
 jobs:
   test:
