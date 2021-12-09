@@ -37,7 +37,7 @@ specifiers:
   npm-run-all: ^4.1.5
   prettier: ^2.3.2
   qunit: ^2.16.0
-  qunit-dom: ^1.6.0
+  qunit-dom: 2.0.0
   webpack: ^5.65.0
 
 dependencies:
@@ -79,7 +79,7 @@ devDependencies:
   npm-run-all: 4.1.5
   prettier: 2.5.1
   qunit: 2.17.2
-  qunit-dom: 1.6.0
+  qunit-dom: 2.0.0
   webpack: 5.65.0
 
 packages:
@@ -8702,9 +8702,9 @@ packages:
       rimraf: 2.7.1
       underscore.string: 3.3.5
 
-  /qunit-dom/1.6.0:
-    resolution: {integrity: sha512-YwSqcLjQcRI0fUFpaSWwU10KIJPFW5Qh+d3cT5DOgx81dypRuUSiPkKFmBY/CDs/R1KdHRadthkcXg2rqAon8Q==}
-    engines: {node: 10.* || >= 12.*}
+  /qunit-dom/2.0.0:
+    resolution: {integrity: sha512-mElzLN99wYPOGekahqRA+mq7NcThXY9c+/tDkgJmT7W5LeZAFNyITr2rFKNnCbWLIhuLdFw88kCBMrJSfyBYpA==}
+    engines: {node: 12.* || 14.* || >= 16.*}
     dependencies:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
