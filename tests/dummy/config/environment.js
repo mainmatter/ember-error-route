@@ -49,7 +49,6 @@ module.exports = function (environment) {
 
   if (process.env.DEPLOY_TARGET === 'GitHub Pages') {
     ENV.rootURL = '/ember-error-route';
-    ENV.locationType = 'hash';
   }
 
   return ENV;
