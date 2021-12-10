@@ -1,3 +1,4 @@
+import { getOwner } from '@ember/application';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
@@ -28,7 +29,14 @@ export default class ErrorRoute extends Route {
    * transition object.
    */
   serialize({ transition }) {
-    return { path: this.pathForRouteInfo(transition.to) };
+    let path = this.urlForRouteInfo(transition.to);
+
+    let { rootURL } = getOwner(this).resolveRegistration('config:environment');
+    if (path.startsWith(rootURL)) {
+      path = path.slice(rootURL.length);
+    }
+
+    return { path };
   }
 
   /**
@@ -36,11 +44,11 @@ export default class ErrorRoute extends Route {
    * and returns the corresponding `:path` route parameter for this `catch-all` route.
    * @return {string}
    */
-  pathForRouteInfo(routeInfo) {
+  urlForRouteInfo(routeInfo) {
     let routeName = routeInfo.name;
     let params = paramsForRouteInfo(routeInfo);
     let queryParams = routeInfo.queryParams;
-    return this.router.urlFor(routeName, ...params, { queryParams }).slice(1);
+    return this.router.urlFor(routeName, ...params, { queryParams });
   }
 }
 
