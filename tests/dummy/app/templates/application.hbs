@@ -1,17 +1,14 @@
 {{page-title "ember-error-route"}}
 
-<h2 id="title">Welcome to Ember</h2>
+<header class="header">
+  <div>URL: <code>{{this.url}}</code></div>
+  <div>Route: <code>{{this.route}}</code></div>
+</header>
 
-<ul>
-  <li><LinkTo @route="index" data-test-index>index</LinkTo></li>
+<main class="main">
+  <div class="content">
+    <h1><LinkTo @route="index">ember-error-route</LinkTo></h1>
 
-  <li><LinkTo @route="native" @model="200" data-test-200-native>200 (native)</LinkTo></li>
-  <li><LinkTo @route="native" @model="404" data-test-404-native>404 (native)</LinkTo></li>
-  <li><LinkTo @route="native" @model="500" data-test-500-native>500 (native)</LinkTo></li>
-
-  <li><LinkTo @route="fixed" @model="200" data-test-200-fixed>200 (fixed)</LinkTo></li>
-  <li><LinkTo @route="fixed" @model="404" data-test-404-fixed>404 (fixed)</LinkTo></li>
-  <li><LinkTo @route="fixed" @model="500" data-test-500-fixed>500 (fixed)</LinkTo></li>
-</ul>
-
-{{outlet}}
+    {{outlet}}
+  </div>
+</main>

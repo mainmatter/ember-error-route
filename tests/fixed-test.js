@@ -31,20 +31,4 @@ module('Acceptance | fixed', function (hooks) {
     assert.strictEqual(currentURL(), '/fixed/404');
     assert.strictEqual(currentRouteName(), 'error');
   });
-
-  test('500', async function (assert) {
-    await visit('/');
-    assert.strictEqual(currentURL(), '/');
-    assert.strictEqual(currentRouteName(), 'index');
-
-    await click('[data-test-500-fixed]');
-    assert.strictEqual(currentURL(), '/fixed/500');
-    assert.strictEqual(currentRouteName(), 'error');
-  });
-
-  test('500 directly', async function (assert) {
-    await visit('/fixed/500');
-    assert.strictEqual(currentURL(), '/fixed/500');
-    assert.strictEqual(currentRouteName(), 'error');
-  });
 });

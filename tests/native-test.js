@@ -31,20 +31,4 @@ module('Acceptance | native', function (hooks) {
     assert.strictEqual(currentURL(), '/native/404');
     assert.strictEqual(currentRouteName(), 'native_error');
   });
-
-  test('500', async function (assert) {
-    await visit('/');
-    assert.strictEqual(currentURL(), '/');
-    assert.strictEqual(currentRouteName(), 'index');
-
-    await click('[data-test-500-native]');
-    assert.strictEqual(currentURL(), '/');
-    assert.strictEqual(currentRouteName(), 'native_error');
-  });
-
-  test('500 directly', async function (assert) {
-    await visit('/native/500');
-    assert.strictEqual(currentURL(), '/native/500');
-    assert.strictEqual(currentRouteName(), 'native_error');
-  });
 });
