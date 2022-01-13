@@ -24,6 +24,9 @@ p {
 
 .header {
   position: sticky;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   top: 0;
   left: 0;
   background: #f1f1f1;
@@ -34,6 +37,14 @@ p {
 
 .header > * + * {
   margin-top: 4px;
+}
+
+.github-link {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  padding: 12px;
+  margin: -12px;
 }
 
 .main {
