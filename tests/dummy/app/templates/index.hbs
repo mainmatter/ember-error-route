@@ -40,3 +40,5 @@
 </code></pre>
 <p>While this looks a little more complicated than just throwing an error, it does fix the issue above. If you visit e.g. <LinkTo @route="fixed" @model="404"><code>/fixed/404</code></LinkTo> our custom error page will be displayed and URL updated correctly.</p>
 <p>All of the passed in options are also available in the <code>error</code> route, which allows us to implement e.g. a “Retry” button using <code>this.model.transition.retry();</code>.</p>
+
+<p>You can find the complete <a href="https://github.com/simplabs/ember-error-route#usage">usage instruction</a> in the README file on our GitHub project.</p>
