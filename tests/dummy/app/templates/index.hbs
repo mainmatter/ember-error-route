@@ -1,1 +1,42 @@
-route: <code>index</code>
+<p>This addon will help you build better “404 Not Found” and other error pages in
+  Ember.js.</p>
+
+<div class="quick-nav">
+  <div>Quick Navigation:</div>
+
+  <ul>
+    <li><LinkTo @route="native" @model="200" data-test-200-native><code>/native/200</code></LinkTo></li>
+    <li><LinkTo @route="native" @model="404" data-test-404-native><code>/native/404</code></LinkTo></li>
+
+    <li><LinkTo @route="fixed" @model="200" data-test-200-fixed><code>/fixed/200</code></LinkTo></li>
+    <li><LinkTo @route="fixed" @model="404" data-test-404-fixed><code>/fixed/404</code></LinkTo></li>
+  </ul>
+
+  <p>If you don't know what these links are, read the following text first… 😉</p>
+</div>
+
+<p>The way to do this natively in Ember.js is called: <a href="https://guides.emberjs.com/release/routing/loading-and-error-substates/#toc_error-substates"><code>error</code> substates</a>.</p>
+<p>In this example app we have two routes, <code>native</code> and <code>fixed</code>:</p>
+<pre class=" language-js"><code class="prism language-js"><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">'native'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/native/:id'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">'fixed'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/fixed/:id'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The <code>native</code> route is throwing an error (<code>throw new Error('...');</code>) if anything but <code>/native/200</code> is visited. The application
+  contains a <code>native-error.hbs</code> template, next to the <code>native.hbs</code>, which gets displayed if the <code>model()</code> hook of the route
+  throws an error.</p>
+<p>The problem: if you visit e.g. <LinkTo @route="native" @model="404"><code>/native/404</code></LinkTo> you will see the <code>native-error.hbs</code> template, but the URL will not update because
+  the transition has been cancelled by the thrown error. If you then refresh the page you will end up in a different place,
+  and if instead you try to navigate back with the browser back button, you will navigate back two steps… 🙈</p>
+<p>The <code>fixed</code> route is implemented using <code>ember-error-route</code>. We have introduced a catch-all <code>error</code> route <code>this.route('error', { path: '*path' });</code> in the router and
+  if the <code>model()</code> hook of a route throws an error we catch it and manually redirect the user to this custom <code>error</code> route:</p>
+<pre class=" language-js"><code class="prism language-js">@service router<span class="token punctuation">;</span>
+
+<span class="token keyword">async</span> <span class="token function">model</span><span class="token punctuation">(</span>params<span class="token punctuation">,</span> transition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`https://movies.com/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">.json`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>router<span class="token punctuation">.</span><span class="token function">replaceWith</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> transition<span class="token punctuation">,</span> error<span class="token punctuation">,</span> title<span class="token punctuation">:</span> <span class="token string">'Movie not found'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>While this looks a little more complicated than just throwing an error, it does fix the issue above. If you visit e.g. <LinkTo @route="fixed" @model="404"><code>/fixed/404</code></LinkTo> our custom error page will be displayed and URL updated correctly.</p>
+<p>All of the passed in options are also available in the <code>error</code> route, which allows us to implement e.g. a “Retry” button using <code>this.model.transition.retry();</code>.</p>
