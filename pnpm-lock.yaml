@@ -5,8 +5,8 @@ specifiers:
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.7.0
   '@embroider/test-setup': 1.6.0
-  '@glimmer/component': 1.1.1
-  '@glimmer/tracking': 1.1.1
+  '@glimmer/component': 1.1.2
+  '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
   ember-auto-import: 2.4.1
   ember-cli: 4.3.0
@@ -50,8 +50,8 @@ devDependencies:
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.7.0
   '@embroider/test-setup': 1.6.0
-  '@glimmer/component': 1.1.1
-  '@glimmer/tracking': 1.1.1
+  '@glimmer/component': 1.1.2
+  '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
   ember-auto-import: 2.4.1_webpack@5.72.0
   ember-cli: 4.3.0
@@ -1382,8 +1382,8 @@ packages:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
     dev: true
 
-  /@glimmer/component/1.1.1:
-    resolution: {integrity: sha512-+nEj8nH/0WiCFz3dZOy50BLRuYiCZ3C2qrsckquJS/bQF9/nf0ZQ7Hwd53kAp7rLnxkYSLk4z4cUDBqiOf2nBQ==}
+  /@glimmer/component/1.1.2:
+    resolution: {integrity: sha512-XyAsEEa4kWOPy+gIdMjJ8XlzA3qrGH55ZDv6nA16ibalCR17k74BI0CztxuRds+Rm6CtbUVgheCVlcCULuqD7A==}
     engines: {node: 6.* || 8.* || >= 10.*}
     dependencies:
       '@glimmer/di': 0.1.11
@@ -1444,8 +1444,8 @@ packages:
       simple-html-tokenizer: 0.5.11
     dev: true
 
-  /@glimmer/tracking/1.1.1:
-    resolution: {integrity: sha512-ZdwyzHww8Svdy8kfMgL9pffiWO7DmD+1GMq9hsOMQMsuZ23E2ZAb9nLjt6hKqBpPLu1yQSXreL22YPmTZ0f9tw==}
+  /@glimmer/tracking/1.1.2:
+    resolution: {integrity: sha512-cyV32zsHh+CnftuRX84ALZpd2rpbDrhLhJnTXn9W//QpqdRZ5rdMsxSY9fOsj0CKEc706tmEU299oNnDc0d7tA==}
     dependencies:
       '@glimmer/env': 0.1.7
       '@glimmer/validator': 0.44.0
