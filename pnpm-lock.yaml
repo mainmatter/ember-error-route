@@ -25,7 +25,7 @@ specifiers:
   ember-resolver: 8.0.3
   ember-source: 4.3.0
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.3.0
+  ember-template-lint: 4.4.0
   ember-try: 2.0.0
   eslint: 8.13.0
   eslint-config-prettier: 8.5.0
@@ -69,7 +69,7 @@ devDependencies:
   ember-resolver: 8.0.3
   ember-source: 4.3.0_webpack@5.72.0
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.3.0
+  ember-template-lint: 4.4.0
   ember-try: 2.0.0
   eslint: 8.13.0
   eslint-config-prettier: 8.5.0_eslint@8.13.0
@@ -5087,8 +5087,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-template-lint/4.3.0:
-    resolution: {integrity: sha512-a+UFZDTGMUStY8wnzFQyD3BmA/UKdegQ4WDikS0TbhVTx9tK6aOnVh5lV33Xr4Fbf3Pee1N1//XdCulWpUajMg==}
+  /ember-template-lint/4.4.0:
+    resolution: {integrity: sha512-4HyyNo1CrKCeSwPbpZ+XHFM1NMl4JzXJweotYWOQ//Yepbv8LWLVy4NqLMUxTeujz0KZmUhAgoGsahASv7roaw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
