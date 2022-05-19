@@ -25,7 +25,7 @@ specifiers:
   ember-resolver: 8.0.3
   ember-source: 4.4.0
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.8.0
+  ember-template-lint: 4.9.0
   ember-try: 2.0.0
   eslint: 8.15.0
   eslint-config-prettier: 8.5.0
@@ -69,7 +69,7 @@ devDependencies:
   ember-resolver: 8.0.3
   ember-source: 4.4.0_webpack@5.72.1
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.8.0
+  ember-template-lint: 4.9.0
   ember-try: 2.0.0
   eslint: 8.15.0
   eslint-config-prettier: 8.5.0_eslint@8.15.0
@@ -1421,7 +1421,7 @@ packages:
     dev: true
 
   /@glimmer/env/0.1.7:
-    resolution: {integrity: sha1-/S0rVakCnGs3psk16MiHGucN+gc=}
+    resolution: {integrity: sha512-JKF/a9I9jw6fGoz8kA7LEQslrwJ5jms5CXhu/aqkBWk+PmZ6pTl8mlb/eJ/5ujBGTiQzBhy5AIWF712iA+4/mw==}
     dev: true
 
   /@glimmer/global-context/0.83.1:
@@ -2287,7 +2287,7 @@ packages:
     dev: true
 
   /ansi-regex/2.1.1:
-    resolution: {integrity: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=}
+    resolution: {integrity: sha512-TIGnTpdo+E3+pCyAluZvtED5p5wCqLdezCyhPZzKPcxvFplEt4i+W7OONCKgeZFT3+y5NZZfOOS/Bdcanm1MYA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -2307,7 +2307,7 @@ packages:
     dev: true
 
   /ansi-styles/2.2.1:
-    resolution: {integrity: sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=}
+    resolution: {integrity: sha512-kmCevFghRiWM7HB5zTPULl4r9bVFSWjz62MhqizDGUrq2NWuNMQyuv4tHHoKJHs69M/MF64lEcHdYIocrdWQYA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -2514,7 +2514,7 @@ packages:
     dev: true
 
   /async/0.2.10:
-    resolution: {integrity: sha1-trvgsGdLnXGXCMo43owjfLUmw9E=}
+    resolution: {integrity: sha512-eAkdoKxU6/LkKDBzLpT+t6Ff5EtfSF4wx1WfJiPEEV7WNLnDaRXk0oVysiEPm262roaachGexwUv94WhSgN5TQ==}
     dev: true
 
   /async/2.6.4:
@@ -3735,7 +3735,7 @@ packages:
     dev: true
 
   /chalk/1.1.3:
-    resolution: {integrity: sha1-qBFcVeSnAv5NFQq9OHKCKn4J/Jg=}
+    resolution: {integrity: sha512-U3lRVLMSlsCfjqYPbLyVv11M9CPW4I728d6TCKMAOJueEeB9/8o+eSsMnxPJD+Q+K909sdESg7C+tIkoH6on1A==}
     engines: {node: '>=0.10.0'}
     dependencies:
       ansi-styles: 2.2.1
@@ -3892,7 +3892,7 @@ packages:
     dev: true
 
   /cli-cursor/2.1.0:
-    resolution: {integrity: sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=}
+    resolution: {integrity: sha512-8lgKz8LmCRYZZQDpRyT2m5rKJ08TnU4tR9FFFW2rxpxR1FzWi4PQ/NfyODchAatHaUgnSPVcx/R5w6NuTBzFiw==}
     engines: {node: '>=4'}
     dependencies:
       restore-cursor: 2.0.0
@@ -5440,8 +5440,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-template-lint/4.8.0:
-    resolution: {integrity: sha512-cn28J9bFd1qXuF23Sb7ydyFto1N+n6XjS/TfcrxKJ4eK5Wew0Ix4RDAdHy/Gc29zD2K0sAuwCwMAIokwCLI9Kg==}
+  /ember-template-lint/4.9.0:
+    resolution: {integrity: sha512-corIvZ0DxcO6VUiBScePSrXCNT/aP1l3U4/6pL9+34iGMVVpkOKdkAr8ENJ0YTF3LszK8LfKNRMXM5IK1OaKWg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -5460,7 +5460,7 @@ packages:
       micromatch: 4.0.5
       resolve: 1.22.0
       v8-compile-cache: 2.3.0
-      yargs: 17.4.1
+      yargs: 17.5.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -8071,7 +8071,7 @@ packages:
       make-fetch-happen: 9.1.0
       p-map: 3.0.0
       progress: 2.0.3
-      yargs: 17.4.1
+      yargs: 17.5.1
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -12640,8 +12640,8 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
-  /yargs/17.4.1:
-    resolution: {integrity: sha512-WSZD9jgobAg3ZKuCQZSa3g9QOJeCCqLoLAykiWgmXnDo9EPnn4RPf5qVTtzgOx66o6/oqhcA5tHtJXpG8pMt3g==}
+  /yargs/17.5.1:
+    resolution: {integrity: sha512-t6YAJcxDkNX7NFYiVtKvWUz8l+PaKTLiL63mJYWR2GnHq2gjEWISzsLp9wg3aY36dY1j+gfIEL3pIF+XlJJfbA==}
     engines: {node: '>=12'}
     dependencies:
       cliui: 7.0.4
