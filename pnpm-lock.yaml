@@ -4,7 +4,7 @@ specifiers:
   '@babel/eslint-parser': 7.17.0
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1
-  '@embroider/test-setup': 1.6.0
+  '@embroider/test-setup': 1.7.0
   '@glimmer/component': 1.1.2
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -49,7 +49,7 @@ devDependencies:
   '@babel/eslint-parser': 7.17.0_eslint@8.16.0
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1_ember-source@4.4.0
-  '@embroider/test-setup': 1.6.0
+  '@embroider/test-setup': 1.7.0
   '@glimmer/component': 1.1.2
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -1369,8 +1369,8 @@ packages:
       typescript-memoize: 1.1.0
     dev: true
 
-  /@embroider/test-setup/1.6.0:
-    resolution: {integrity: sha512-6U+NsfGL9ubADreLCnOWMCVFpoU4/DzHlbgfEH3NE+rcdF+2WbY8VP+MeqjjccoES0HvhIeUKvoIbiqkoWAbhQ==}
+  /@embroider/test-setup/1.7.0:
+    resolution: {integrity: sha512-SrGf8igzCrQA1A7c7gtcrB8V017GfKyTKuUooMVIja7CbEc6RUCkb0hmw/9A1+sa3+KXQE69mvz+SCwQeP1X/Q==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       lodash: 4.17.21
