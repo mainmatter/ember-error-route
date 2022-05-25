@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/eslint-parser': 7.17.0
+  '@babel/eslint-parser': 7.18.2
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1
   '@embroider/test-setup': 1.7.1
@@ -46,7 +46,7 @@ dependencies:
   ember-cli-babel: 7.26.11
 
 devDependencies:
-  '@babel/eslint-parser': 7.17.0_eslint@8.16.0
+  '@babel/eslint-parser': 7.18.2_eslint@8.16.0
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1_ember-source@4.4.0
   '@embroider/test-setup': 1.7.1
@@ -126,8 +126,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/eslint-parser/7.17.0_eslint@8.16.0:
-    resolution: {integrity: sha512-PUEJ7ZBXbRkbq3qqM/jZ2nIuakUBqCYc7Qf52Lj7dlZ6zERnqisdHioL0l4wwQZnmskMeasqUNzLBFKs3nylXA==}
+  /@babel/eslint-parser/7.18.2_eslint@8.16.0:
+    resolution: {integrity: sha512-oFQYkE8SuH14+uR51JVAmdqwKYXGRjEXx7s+WiagVjqQ+HPE+nnwyF2qlVG8evUsUHmPcA+6YXMEDbIhEyQc5A==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': '>=7.11.0'
