@@ -25,7 +25,7 @@ specifiers:
   ember-resolver: 8.0.3
   ember-source: 4.4.0
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.9.1
+  ember-template-lint: 4.10.0
   ember-try: 2.0.0
   eslint: 8.16.0
   eslint-config-prettier: 8.5.0
@@ -69,7 +69,7 @@ devDependencies:
   ember-resolver: 8.0.3
   ember-source: 4.4.0_webpack@5.72.1
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.9.1
+  ember-template-lint: 4.10.0
   ember-try: 2.0.0
   eslint: 8.16.0
   eslint-config-prettier: 8.5.0_eslint@8.16.0
@@ -4029,7 +4029,7 @@ packages:
     dev: true
 
   /colors/1.0.3:
-    resolution: {integrity: sha1-BDP0TYCWgP3rYO0mDxsMJi6CpAs=}
+    resolution: {integrity: sha512-pFGrxThWcWQ2MsAz6RtgeWe4NK2kUE1WfsrvvlctdII745EW9I0yflqhe7++M5LEc7bV2c/9/5zc8sFcpL0Drw==}
     engines: {node: '>=0.1.90'}
     dev: true
 
@@ -4050,7 +4050,7 @@ packages:
     dev: true
 
   /commander/2.8.1:
-    resolution: {integrity: sha1-Br42f+v9oMMwqh4qBy09yXYkJdQ=}
+    resolution: {integrity: sha512-+pJLBFVk+9ZZdlAOB5WuIElVPPth47hILFkmGym57aq8kwxsowvByvB0DHs1vQAhyMZzdcpTtF0VDKGkSDR4ZQ==}
     engines: {node: '>= 0.6.x'}
     dependencies:
       graceful-readlink: 1.0.1
@@ -5465,8 +5465,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-template-lint/4.9.1:
-    resolution: {integrity: sha512-ShIRqIhNbJQTzkqGUN9mLY7mOHWQs4btGV57uHSA1GooUsEK34HRQIXASTOZCWR/W3XCDEc7cv/TWXfQWlsZRQ==}
+  /ember-template-lint/4.10.0:
+    resolution: {integrity: sha512-Cvs7K8UxjhNecONpBlDAx6VzA7IwC7yunFGsvg/3gZqDpNVZvK4lwqCeIe/bsD3lDbMBETVHzKovgCq3pafvdw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
