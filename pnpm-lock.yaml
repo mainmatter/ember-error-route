@@ -4,7 +4,7 @@ specifiers:
   '@babel/eslint-parser': 7.18.2
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1
-  '@embroider/test-setup': 1.8.0
+  '@embroider/test-setup': 1.8.1
   '@glimmer/component': 1.1.2
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -49,7 +49,7 @@ devDependencies:
   '@babel/eslint-parser': 7.18.2_eslint@8.18.0
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1_ember-source@4.5.0
-  '@embroider/test-setup': 1.8.0
+  '@embroider/test-setup': 1.8.1
   '@glimmer/component': 1.1.2
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -1369,12 +1369,12 @@ packages:
       typescript-memoize: 1.1.0
     dev: true
 
-  /@embroider/test-setup/1.8.0:
-    resolution: {integrity: sha512-ooD7oDFH7/OMAtRuE4PKqNcjYLZAg/EF/tDaYY1xFGbllELm99bjp1s2Sr5UTsWxH8Pl69C+G4GJN2BJmGGOfA==}
+  /@embroider/test-setup/1.8.1:
+    resolution: {integrity: sha512-pELZvAWbjuJQmCXb2olCEoHYytzVDr84H63IY0VJXK1UdEFeJN1vjjata2n+DPZanj8Le5nm/SuJlkMQQOknZA==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       lodash: 4.17.21
-      resolve: 1.22.0
+      resolve: 1.22.1
     dev: true
 
   /@embroider/util/1.6.0_ember-source@4.5.0:
@@ -5086,7 +5086,7 @@ packages:
       ember-cli-babel-plugin-helpers: 1.1.1
       execa: 1.0.0
       fs-extra: 7.0.1
-      resolve: 1.22.0
+      resolve: 1.22.1
       rsvp: 4.8.5
       semver: 6.3.0
       stagehand: 1.0.0
@@ -5106,7 +5106,7 @@ packages:
       ember-cli-babel-plugin-helpers: 1.1.1
       execa: 2.1.0
       fs-extra: 8.1.0
-      resolve: 1.22.0
+      resolve: 1.22.1
       rsvp: 4.8.5
       semver: 6.3.0
       stagehand: 1.0.0
@@ -7110,7 +7110,7 @@ packages:
       heimdalljs: 0.2.6
       heimdalljs-logger: 0.1.10
       path-root: 0.1.1
-      resolve: 1.22.0
+      resolve: 1.22.1
       resolve-package-path: 1.2.7
     transitivePeerDependencies:
       - supports-color
@@ -7565,6 +7565,7 @@ packages:
     resolution: {integrity: sha512-SdNCUs284hr40hFTFP6l0IfZ/RSrMXF3qgoRHd3/79unUTvrFO/JoXwkGm+5J/Oe3E/b5GsnG330uUNgRpu1PA==}
     dependencies:
       has: 1.0.3
+    dev: true
 
   /is-core-module/2.9.0:
     resolution: {integrity: sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==}
@@ -10574,7 +10575,7 @@ packages:
     resolution: {integrity: sha512-fVEKHGeK85bGbVFuwO9o1aU0n3vqQGrezPc51JGu9UTXpFQfWq5qCeKxyaRUSvephs+06c5j5rPq/dzHGEo8+Q==}
     dependencies:
       path-root: 0.1.1
-      resolve: 1.22.0
+      resolve: 1.22.1
 
   /resolve-package-path/2.0.0:
     resolution: {integrity: sha512-/CLuzodHO2wyyHTzls5Qr+EFeG6RcW4u6//gjYvUfcfyuplIX1SSccU+A5A9A78Gmezkl3NBkFAMxLbzTY9TJA==}
@@ -10588,7 +10589,7 @@ packages:
     engines: {node: 10.* || >= 12}
     dependencies:
       path-root: 0.1.1
-      resolve: 1.22.0
+      resolve: 1.22.1
 
   /resolve-package-path/4.0.3:
     resolution: {integrity: sha512-SRpNAPW4kewOaNUt8VPqhJ0UMxawMwzJD8V7m1cJfdSTK9ieZwS6K7Dabsm4bmLFM96Z5Y/UznrpG5kt1im8yA==}
@@ -10617,6 +10618,7 @@ packages:
       is-core-module: 2.8.1
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+    dev: true
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
