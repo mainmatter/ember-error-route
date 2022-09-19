@@ -30,7 +30,7 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-          git-config-name: simplabs
-          git-config-email: info@simplabs.com
+          git-config-name: Mainmatter
+          git-config-email: info@mainmatter.com
           single-commit: true
 

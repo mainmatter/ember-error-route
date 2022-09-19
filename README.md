@@ -4,7 +4,7 @@ ember-error-route
 This addon will help you build better “404 Not Found” and other error pages in
 Ember.js.
 
-Take a look at our [demo page](https://simplabs.github.io/ember-error-route/)
+Take a look at our [demo page](https://mainmatter.github.io/ember-error-route/)
 to better understand what this does!
 
 
