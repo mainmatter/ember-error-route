@@ -25,7 +25,7 @@ specifiers:
   ember-resolver: 8.0.3
   ember-source: 4.8.0
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.15.0
+  ember-template-lint: 4.16.0
   ember-try: 2.0.0
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0
@@ -69,7 +69,7 @@ devDependencies:
   ember-resolver: 8.0.3
   ember-source: 4.8.0_gsocywzcpltb62s22lnmo6ims4
   ember-source-channel-url: 3.0.0
-  ember-template-lint: 4.15.0_ember-cli-htmlbars@6.1.1
+  ember-template-lint: 4.16.0_ember-cli-htmlbars@6.1.1
   ember-try: 2.0.0
   eslint: 8.25.0
   eslint-config-prettier: 8.5.0_eslint@8.25.0
@@ -1826,7 +1826,7 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.6
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/7.29.0:
@@ -1839,7 +1839,7 @@ packages:
   /@types/eslint/8.4.6:
     resolution: {integrity: sha512-/fqTbjxyFUaYNO7VcW5g+4npmqVACz1bB7RTHYuLj+PRjw9hrCwrUXVQFpChUS0JsyEFvMZ7U/PfmvWgxJhI9g==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -4937,8 +4937,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-template-lint/4.15.0_ember-cli-htmlbars@6.1.1:
-    resolution: {integrity: sha512-+43ka0qcVzA7KUbUby7VJHm/KoKkSQCbEYWdjiKlDaYNEYxjNMOFdPo3AcGJ50RxTx55A74p0RDYdTTxJV7u+A==}
+  /ember-template-lint/4.16.0_ember-cli-htmlbars@6.1.1:
+    resolution: {integrity: sha512-nxUORaVKsEADA7CmZmHCFsZ/BJIS1C7rNUwAWyBHhNhIivN0yGHw9woUCcBIbIWGEmdLGwTS69gXXM+SZqp4kA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
