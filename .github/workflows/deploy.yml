@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PNPM_VERSION: 6.35.1
+  PNPM_VERSION: 7.30.5
   DEPLOY_TARGET: 'GitHub Pages'
 
 jobs:
