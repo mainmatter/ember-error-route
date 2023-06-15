@@ -22,7 +22,7 @@ specifiers:
   ember-maybe-import-regenerator: 1.0.0
   ember-page-title: 7.0.0
   ember-qunit: 6.0.0
-  ember-resolver: 8.1.0
+  ember-resolver: 10.1.1
   ember-source: 4.11.0
   ember-source-channel-url: 3.0.0
   ember-template-lint: 5.1.1
@@ -66,7 +66,7 @@ devDependencies:
   ember-maybe-import-regenerator: 1.0.0
   ember-page-title: 7.0.0
   ember-qunit: 6.0.0_bpyxhw4q4amqwk427hkb2mxhua
-  ember-resolver: 8.1.0
+  ember-resolver: 10.1.1_ember-source@4.11.0
   ember-source: 4.11.0_j6mhgbor4xqonp65vkpdi5nj6q
   ember-source-channel-url: 3.0.0
   ember-template-lint: 5.1.1
@@ -5027,18 +5027,19 @@ packages:
       - webpack
     dev: true
 
-  /ember-resolver/8.1.0:
-    resolution: {integrity: sha512-MGD7X2ztZVswGqs1mLgzhZJRhG7XiF6Mg4DgC7xJFWRYQQUHyGJpGdNWY9nXyrYnRIsCrQoL1do41zpxbrB/cg==}
-    engines: {node: '>= 10.*'}
+  /ember-resolver/10.1.1_ember-source@4.11.0:
+    resolution: {integrity: sha512-y1zzn6C4YGJui+tJzcCKlsf1oSOSVAkRrvmg8OwqVIKnALKKb9ihx2qLCslHg8x0wJvJgMtDMXgrczvQrZW0Lw==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      '@ember/string': ^3.0.1
+      ember-source: ^4.8.3 || >= 5.0.0
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
     dependencies:
-      babel-plugin-debug-macros: 0.3.4
-      broccoli-funnel: 3.0.8
-      broccoli-merge-trees: 4.2.0
       ember-cli-babel: 7.26.11
-      ember-cli-version-checker: 5.1.2
-      resolve: 1.22.1
+      ember-source: 4.11.0_j6mhgbor4xqonp65vkpdi5nj6q
     transitivePeerDependencies:
-      - '@babel/core'
       - supports-color
     dev: true
 
