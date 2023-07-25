@@ -17,11 +17,11 @@ devDependencies:
     specifier: 2.0.0
     version: 2.0.0
   '@ember/test-helpers':
-    specifier: 2.9.3
-    version: 2.9.3(@babel/core@7.22.9)(ember-source@4.11.0)
+    specifier: 3.2.0
+    version: 3.2.0(ember-source@4.11.0)(webpack@5.88.2)
   '@embroider/test-setup':
-    specifier: 1.8.3
-    version: 1.8.3
+    specifier: 3.0.1
+    version: 3.0.1
   '@glimmer/component':
     specifier: 1.1.2
     version: 1.1.2(@babel/core@7.22.9)
@@ -71,8 +71,8 @@ devDependencies:
     specifier: 7.0.0
     version: 7.0.0
   ember-qunit:
-    specifier: 6.0.0
-    version: 6.0.0(@ember/test-helpers@2.9.3)(qunit@2.19.4)(webpack@5.88.2)
+    specifier: 7.0.0
+    version: 7.0.0(@ember/test-helpers@3.2.0)(ember-source@4.11.0)(qunit@2.19.4)(webpack@5.88.2)
   ember-resolver:
     specifier: 8.1.0
     version: 8.1.0(@babel/core@7.22.9)
@@ -2604,25 +2604,25 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers@2.9.3(@babel/core@7.22.9)(ember-source@4.11.0):
-    resolution: {integrity: sha512-ejVg4Dj+G/6zyLvQsYOvmGiOLU6AS94tY4ClaO1E2oVvjjtVJIRmVLFN61I+DuyBg9hS3cFoPjQRTZB9MRIbxQ==}
-    engines: {node: 10.* || 12.* || 14.* || 15.* || >= 16.*}
+  /@ember/test-helpers@3.2.0(ember-source@4.11.0)(webpack@5.88.2):
+    resolution: {integrity: sha512-3yWpPsK5O77tUdCwW3HayrAcdlRitIRYMvLIG69Pkal1JMIGdNYVTvJ2R1lenhQh2syd/WFmGM07vQuDAtotQw==}
+    engines: {node: 16.* || >= 18}
     peerDependencies:
-      ember-source: '>=3.8.0'
+      ember-source: ^4.0.0 || ^5.0.0
     dependencies:
       '@ember/test-waiters': 3.0.2
-      '@embroider/macros': 1.10.0
-      '@embroider/util': 1.10.0(ember-source@4.11.0)
+      '@embroider/macros': 1.13.0
+      '@simple-dom/interface': 1.4.0
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
+      ember-auto-import: 2.6.3(webpack@5.88.2)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.2.0
-      ember-destroyable-polyfill: 2.0.3(@babel/core@7.22.9)
       ember-source: 4.11.0(@babel/core@7.22.9)(@glimmer/component@1.1.2)(webpack@5.88.2)
     transitivePeerDependencies:
-      - '@babel/core'
       - '@glint/template'
       - supports-color
+      - webpack
     dev: true
 
   /@ember/test-waiters@3.0.2:
@@ -2632,23 +2632,7 @@ packages:
       calculate-cache-key-for-tree: 2.0.0
       ember-cli-babel: 7.26.11
       ember-cli-version-checker: 5.1.2
-      semver: 7.3.8
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@embroider/macros@1.10.0:
-    resolution: {integrity: sha512-LMbfQGk/a+f6xtvAv5fq/wf2LRxETnbgSCLUf/z6ebzmuskOUxrke+uP55chF/loWrARi9g6erFQ7RDOUoBMSg==}
-    engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      '@embroider/shared-internals': 2.0.0
-      assert-never: 1.2.1
-      babel-import-util: 1.3.0
-      ember-cli-babel: 7.26.11
-      find-up: 5.0.0
-      lodash: 4.17.21
-      resolve: 1.22.1
-      semver: 7.3.8
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2674,20 +2658,6 @@ packages:
       - supports-color
     dev: true
 
-  /@embroider/shared-internals@2.0.0:
-    resolution: {integrity: sha512-qZ2/xky9mWm5YC6noOa6AiAwgISEQ78YTZNv4SNu2PFgEK/H+Ha/3ddngzGSsnXkVnIHZyxIBzhxETonQYHY9g==}
-    engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      babel-import-util: 1.3.0
-      ember-rfc176-data: 0.3.18
-      fs-extra: 9.1.0
-      js-string-escape: 1.0.1
-      lodash: 4.17.21
-      resolve-package-path: 4.0.3
-      semver: 7.3.8
-      typescript-memoize: 1.1.1
-    dev: true
-
   /@embroider/shared-internals@2.3.0:
     resolution: {integrity: sha512-5h7hUcci10ixXecJj/peqNQJO8kWe4b4tRx7mZjf7I6+P6zDcdVk3QxQZ+/gwrG6cbEfpLzEGKIEiLjZvPtqIA==}
     engines: {node: 12.* || 14.* || >= 16}
@@ -2705,30 +2675,23 @@ packages:
       - supports-color
     dev: true
 
-  /@embroider/test-setup@1.8.3:
-    resolution: {integrity: sha512-BCCbBG7UWkCw+cQ401Ip6LnqTRaQDeKImxR+e7Q4oP6H4EBj7p4iGR1z6fhMy4NNyXKPB6jk3bGa9bTiiNoEAw==}
+  /@embroider/test-setup@3.0.1:
+    resolution: {integrity: sha512-t7R2f10iZDSNw3ovWAPM63GRQTu63uihpVh6CvHev5XkLt8B7tdxcxGyO6RbdF5Hu+pbsUu8sD0kAlR1gopmxg==}
     engines: {node: 12.* || 14.* || >= 16}
-    dependencies:
-      lodash: 4.17.21
-      resolve: 1.22.1
-    dev: true
-
-  /@embroider/util@1.10.0(ember-source@4.11.0):
-    resolution: {integrity: sha512-utAFKoq6ajI27jyqjvX3PiGL4m+ZyGVlVNbSbE/nOqi2llRyAkh5ltH1WkIK7jhdwQFJouo1NpOSj9J3/HDa3A==}
-    engines: {node: 14.* || >= 16}
     peerDependencies:
-      '@glint/template': ^1.0.0-beta.1
-      ember-source: '*'
+      '@embroider/compat': ^3.0.0
+      '@embroider/core': ^3.0.0
+      '@embroider/webpack': ^3.0.0
     peerDependenciesMeta:
-      '@glint/template':
+      '@embroider/compat':
+        optional: true
+      '@embroider/core':
+        optional: true
+      '@embroider/webpack':
         optional: true
     dependencies:
-      '@embroider/macros': 1.10.0
-      broccoli-funnel: 3.0.8
-      ember-cli-babel: 7.26.11
-      ember-source: 4.11.0(@babel/core@7.22.9)(@glimmer/component@1.1.2)(webpack@5.88.2)
-    transitivePeerDependencies:
-      - supports-color
+      lodash: 4.17.21
+      resolve: 1.22.2
     dev: true
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.45.0):
@@ -4070,7 +4033,7 @@ packages:
       glob: 7.2.3
       pkg-up: 2.0.0
       reselect: 3.0.1
-      resolve: 1.22.1
+      resolve: 1.22.2
 
   /babel-plugin-module-resolver@4.1.0:
     resolution: {integrity: sha512-MlX10UDheRr3lb3P0WcaIdtCSRlxdQsB1sBqL7W0raF070bGl1HQQq5K3T2vf2XAYie+ww+5AKC/WrkjRO2knA==}
@@ -6210,7 +6173,7 @@ packages:
       ember-cli-babel-plugin-helpers: 1.1.1
       execa: 1.0.0
       fs-extra: 7.0.1
-      resolve: 1.22.1
+      resolve: 1.22.2
       rsvp: 4.8.5
       semver: 6.3.1
       stagehand: 1.0.1
@@ -6442,18 +6405,6 @@ packages:
       - supports-color
     dev: true
 
-  /ember-destroyable-polyfill@2.0.3(@babel/core@7.22.9):
-    resolution: {integrity: sha512-TovtNqCumzyAiW0/OisSkkVK93xnVF4NRU6+FN0ubpfwEOpRrmM2RqDwXI6YAChCgSHON1cz0DfQStpA1Gjuuw==}
-    engines: {node: 10.* || >= 12}
-    dependencies:
-      ember-cli-babel: 7.26.11
-      ember-cli-version-checker: 5.1.2
-      ember-compatibility-helpers: 1.2.6(@babel/core@7.22.9)
-    transitivePeerDependencies:
-      - '@babel/core'
-      - supports-color
-    dev: true
-
   /ember-disable-prototype-extensions@1.1.3:
     resolution: {integrity: sha512-SB9NcZ27OtoUk+gfalsc3QU17+54OoqR668qHcuvHByk4KAhGxCKlkm9EBlKJcGr7yceOOAJqohTcCEBqfRw9g==}
     engines: {node: '>= 0.10.0'}
@@ -6496,20 +6447,22 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@6.0.0(@ember/test-helpers@2.9.3)(qunit@2.19.4)(webpack@5.88.2):
-    resolution: {integrity: sha512-idNWh9Ap2HN9e3Xozh5Jrciu5tDhn0okM/bgwDjdks3dwuMhEox45iiRTx469FWQ9+ixjZ40AsXsRTDkfCmvmw==}
-    engines: {node: 14.* || 16.* || >= 17}
+  /ember-qunit@7.0.0(@ember/test-helpers@3.2.0)(ember-source@4.11.0)(qunit@2.19.4)(webpack@5.88.2):
+    resolution: {integrity: sha512-KhrndHYEXsHnXvmsGyJLJQ6VCudXaRs5dzPZBsdttZJIhsB6PmYAvq2Q+mh3GRDT/59T/sRDrB3FD3/lATS8aA==}
+    engines: {node: 16.* || >= 18}
     peerDependencies:
-      '@ember/test-helpers': ^2.4.0
+      '@ember/test-helpers': '>=3.0.3'
+      ember-source: '>=4.0.0'
       qunit: ^2.13.0
     dependencies:
-      '@ember/test-helpers': 2.9.3(@babel/core@7.22.9)(ember-source@4.11.0)
+      '@ember/test-helpers': 3.2.0(ember-source@4.11.0)(webpack@5.88.2)
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
       ember-auto-import: 2.6.3(webpack@5.88.2)
       ember-cli-babel: 7.26.11
       ember-cli-test-loader: 3.0.0
+      ember-source: 4.11.0(@babel/core@7.22.9)(@glimmer/component@1.1.2)(webpack@5.88.2)
       qunit: 2.19.4
       resolve-package-path: 4.0.3
       silent-error: 1.1.1
@@ -8364,7 +8317,7 @@ packages:
       heimdalljs: 0.2.6
       heimdalljs-logger: 0.1.10
       path-root: 0.1.1
-      resolve: 1.22.1
+      resolve: 1.22.2
       resolve-package-path: 1.2.7
     transitivePeerDependencies:
       - supports-color
@@ -8800,6 +8753,7 @@ packages:
     resolution: {integrity: sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==}
     dependencies:
       has: 1.0.3
+    dev: true
 
   /is-core-module@2.12.1:
     resolution: {integrity: sha512-Q4ZuBAe2FUsKtyQJoQHlvP8OvBERxO3jEmy1I7hcRXcJBGGHFh/aJBswbXuS9sgrDH2QUO8ilkwNPHvHMd8clg==}
@@ -11710,7 +11664,7 @@ packages:
     resolution: {integrity: sha512-fVEKHGeK85bGbVFuwO9o1aU0n3vqQGrezPc51JGu9UTXpFQfWq5qCeKxyaRUSvephs+06c5j5rPq/dzHGEo8+Q==}
     dependencies:
       path-root: 0.1.1
-      resolve: 1.22.1
+      resolve: 1.22.2
 
   /resolve-package-path@2.0.0:
     resolution: {integrity: sha512-/CLuzodHO2wyyHTzls5Qr+EFeG6RcW4u6//gjYvUfcfyuplIX1SSccU+A5A9A78Gmezkl3NBkFAMxLbzTY9TJA==}
@@ -11724,7 +11678,7 @@ packages:
     engines: {node: 10.* || >= 12}
     dependencies:
       path-root: 0.1.1
-      resolve: 1.22.1
+      resolve: 1.22.2
 
   /resolve-package-path@4.0.3:
     resolution: {integrity: sha512-SRpNAPW4kewOaNUt8VPqhJ0UMxawMwzJD8V7m1cJfdSTK9ieZwS6K7Dabsm4bmLFM96Z5Y/UznrpG5kt1im8yA==}
@@ -11753,6 +11707,7 @@ packages:
       is-core-module: 2.11.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+    dev: true
 
   /resolve@1.22.2:
     resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}
