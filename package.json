@@ -34,6 +34,7 @@
     "@embroider/test-setup": "1.8.3",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
+    "@release-it-plugins/lerna-changelog": "^6.0.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "2.6.3",
     "ember-cli": "4.10.0",
@@ -65,7 +66,6 @@
     "qunit": "2.19.4",
     "qunit-dom": "2.0.0",
     "release-it": "15.9.0",
-    "release-it-lerna-changelog": "5.0.0",
     "webpack": "5.88.2"
   },
   "engines": {

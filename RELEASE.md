@@ -2,7 +2,7 @@
 
 Releases are mostly automated using
 [release-it](https://github.com/release-it/release-it/) and
-[lerna-changelog](https://github.com/lerna/lerna-changelog/).
+[lerna-changelog plugin](https://github.com/release-it-plugins/lerna-changelog).
 
 ## Preparation
 
