@@ -5,7 +5,7 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/simplabs/ember-error-route",
+  "repository": "https://github.com/Mainmatter/ember-error-route",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -76,6 +76,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "https://simplabs.github.io/ember-error-route/"
+    "demoURL": "https://mainmatter.github.io/ember-error-route/"
   }
 }
