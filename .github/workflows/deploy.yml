@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PNPM_VERSION: 6.35.1
+  PNPM_VERSION: 8.6.10
   DEPLOY_TARGET: 'GitHub Pages'
 
 jobs:
@@ -14,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.4.0
-      - uses: pnpm/action-setup@v2.2.4
+      - uses: pnpm/action-setup@v2.3.0
         with:
           version: ${{ env.PNPM_VERSION }}
 
-      - uses: actions/setup-node@v3.6.0
+      - uses: actions/setup-node@v3.7.0
         with:
           node-version: 12.x
           cache: pnpm
