@@ -22,7 +22,11 @@
     "lint:js:fix": "eslint . --fix",
     "release": "release-it",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "publishPackage": "npm publish"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.6"
