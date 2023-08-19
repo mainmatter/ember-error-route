@@ -22,7 +22,8 @@
     "lint:js:fix": "eslint . --fix",
     "release": "release-it",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "publish": "npm publish"
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.6"
