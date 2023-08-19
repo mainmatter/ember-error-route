@@ -65,8 +65,8 @@ devDependencies:
     specifier: 1.0.0
     version: 1.0.0
   ember-page-title:
-    specifier: 7.0.0
-    version: 7.0.0
+    specifier: 8.0.0
+    version: 8.0.0
   ember-qunit:
     specifier: 6.0.0
     version: 6.0.0(@ember/test-helpers@2.9.3)(qunit@2.19.4)(webpack@5.76.2)
@@ -1372,6 +1372,17 @@ packages:
       - supports-color
     dev: true
 
+  /@embroider/addon-shim@1.8.6:
+    resolution: {integrity: sha512-siC9kP78uucEbpDcVyxjkwa76pcs5rVzDVpWO4PDc9EAXRX+pzmUuSTLAK3GztUwx7/PWhz1BenAivqdSvSgfg==}
+    engines: {node: 12.* || 14.* || >= 16}
+    dependencies:
+      '@embroider/shared-internals': 2.4.0
+      broccoli-funnel: 3.0.8
+      semver: 7.3.8
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@embroider/macros@1.10.0:
     resolution: {integrity: sha512-LMbfQGk/a+f6xtvAv5fq/wf2LRxETnbgSCLUf/z6ebzmuskOUxrke+uP55chF/loWrARi9g6erFQ7RDOUoBMSg==}
     engines: {node: 12.* || 14.* || >= 16}
@@ -1400,6 +1411,23 @@ packages:
       resolve-package-path: 4.0.3
       semver: 7.5.4
       typescript-memoize: 1.1.1
+    dev: true
+
+  /@embroider/shared-internals@2.4.0:
+    resolution: {integrity: sha512-pFE05ebenWMC9XAPRjadYCXXb6VmqjkhYN5uqkhPo+VUmMHnx7sZYYxqGjxfVuhC/ghS/BNlOffOCXDOoE7k7g==}
+    engines: {node: 12.* || 14.* || >= 16}
+    dependencies:
+      babel-import-util: 2.0.0
+      debug: 4.3.4
+      ember-rfc176-data: 0.3.18
+      fs-extra: 9.1.0
+      js-string-escape: 1.0.1
+      lodash: 4.17.21
+      resolve-package-path: 4.0.3
+      semver: 7.3.8
+      typescript-memoize: 1.1.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@embroider/test-setup@1.8.3:
@@ -5242,11 +5270,11 @@ packages:
       - supports-color
     dev: true
 
-  /ember-page-title@7.0.0:
-    resolution: {integrity: sha512-oq6+HYbeVD/BnxIO5AkP4gWlsatdgW2HFO10F8+XQiJZrwa7cC7Wm54JNGqQkavkDQTgNSiy1Fe2NILJ14MmAg==}
-    engines: {node: 12.* || 14.* || >= 16}
+  /ember-page-title@8.0.0:
+    resolution: {integrity: sha512-4bu8CpoPObJZNUogwIjpntxS3jMDlZ1eoJsZUuktcCgOI7LfZocuYbu9LnLM215QjEOV0TxGDWwJck1l8cWKeg==}
+    engines: {node: 16.* || >= 18}
     dependencies:
-      ember-cli-babel: 7.26.11
+      '@embroider/addon-shim': 1.8.6
     transitivePeerDependencies:
       - supports-color
     dev: true
