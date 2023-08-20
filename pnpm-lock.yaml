@@ -20,8 +20,8 @@ devDependencies:
     specifier: 3.1.1
     version: 3.1.1
   '@ember/test-helpers':
-    specifier: 2.9.3
-    version: 2.9.3(@babel/core@7.21.3)(ember-source@5.2.0)
+    specifier: 2.9.4
+    version: 2.9.4(@babel/core@7.21.3)(ember-source@5.2.0)
   '@embroider/test-setup':
     specifier: 1.8.3
     version: 1.8.3
@@ -69,7 +69,7 @@ devDependencies:
     version: 8.0.0
   ember-qunit:
     specifier: 6.0.0
-    version: 6.0.0(@ember/test-helpers@2.9.3)(qunit@2.19.4)(webpack@5.76.2)
+    version: 6.0.0(@ember/test-helpers@2.9.4)(qunit@2.19.4)(webpack@5.76.2)
   ember-resolver:
     specifier: 11.0.1
     version: 11.0.1(ember-source@5.2.0)
@@ -1344,8 +1344,8 @@ packages:
       - supports-color
     dev: true
 
-  /@ember/test-helpers@2.9.3(@babel/core@7.21.3)(ember-source@5.2.0):
-    resolution: {integrity: sha512-ejVg4Dj+G/6zyLvQsYOvmGiOLU6AS94tY4ClaO1E2oVvjjtVJIRmVLFN61I+DuyBg9hS3cFoPjQRTZB9MRIbxQ==}
+  /@ember/test-helpers@2.9.4(@babel/core@7.21.3)(ember-source@5.2.0):
+    resolution: {integrity: sha512-z+Qs1NYWyIVDmrY6WdmOS5mdG1lJ5CFfzh6dRhLfs9lq45deDaDrVNcaCYhnNeJZTvUBK2XR2SvPcZm0RloXdA==}
     engines: {node: 10.* || 12.* || 14.* || 15.* || >= 16.*}
     peerDependencies:
       ember-source: '>=3.8.0'
@@ -1372,7 +1372,7 @@ packages:
       calculate-cache-key-for-tree: 2.0.0
       ember-cli-babel: 7.26.11
       ember-cli-version-checker: 5.1.2
-      semver: 7.3.8
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1399,7 +1399,7 @@ packages:
       find-up: 5.0.0
       lodash: 4.17.21
       resolve: 1.22.1
-      semver: 7.3.8
+      semver: 7.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5315,14 +5315,14 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@6.0.0(@ember/test-helpers@2.9.3)(qunit@2.19.4)(webpack@5.76.2):
+  /ember-qunit@6.0.0(@ember/test-helpers@2.9.4)(qunit@2.19.4)(webpack@5.76.2):
     resolution: {integrity: sha512-idNWh9Ap2HN9e3Xozh5Jrciu5tDhn0okM/bgwDjdks3dwuMhEox45iiRTx469FWQ9+ixjZ40AsXsRTDkfCmvmw==}
     engines: {node: 14.* || 16.* || >= 17}
     peerDependencies:
       '@ember/test-helpers': ^2.4.0
       qunit: ^2.13.0
     dependencies:
-      '@ember/test-helpers': 2.9.3(@babel/core@7.21.3)(ember-source@5.2.0)
+      '@ember/test-helpers': 2.9.4(@babel/core@7.21.3)(ember-source@5.2.0)
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
