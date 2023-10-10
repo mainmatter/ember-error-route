@@ -7,6 +7,9 @@ Ember.js.
 Take a look at our [demo page](https://mainmatter.github.io/ember-error-route/)
 to better understand what this does!
 
+> [!NOTE]
+> ember-error-route was written and is maintained by [Mainmatter](https://mainmatter.com) and contributors.
+> We offer consulting, training, and team augmentation for Ember.js – check out our [website](https://mainmatter.com/ember-consulting/) to learn more!
 
 Compatibility
 ------------------------------------------------------------------------------
