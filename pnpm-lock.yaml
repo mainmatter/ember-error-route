@@ -35,8 +35,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   ember-auto-import:
-    specifier: 2.7.2
-    version: 2.7.2(webpack@5.91.0)
+    specifier: 2.7.3
+    version: 2.7.3(webpack@5.91.0)
   ember-cli:
     specifier: 5.8.1
     version: 5.8.1
@@ -1415,7 +1415,7 @@ packages:
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
       dom-element-descriptors: 0.5.0
-      ember-auto-import: 2.7.2(webpack@5.91.0)
+      ember-auto-import: 2.7.3(webpack@5.91.0)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
       ember-source: 5.8.0(@babel/core@7.24.6)(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.91.0)
@@ -4866,8 +4866,8 @@ packages:
   /electron-to-chromium@1.4.783:
     resolution: {integrity: sha512-bT0jEz/Xz1fahQpbZ1D7LgmPYZ3iHVY39NcWWro1+hA2IvjiPeaXtfSqrQ+nXjApMvQRE2ASt1itSLRrebHMRQ==}
 
-  /ember-auto-import@2.7.2(webpack@5.91.0):
-    resolution: {integrity: sha512-pkWIljmJClYL17YBk8FjO7NrZPQoY9v0b+FooJvaHf/xlDQIBYVP7OaDHbNuNbpj7+wAwSDAnnwxjCoLsmm4cw==}
+  /ember-auto-import@2.7.3(webpack@5.91.0):
+    resolution: {integrity: sha512-EQzStGYxNvTPYWCFh0X57HFAzAvA2rHHRgBeWNDKHQ/rENNlHw0c0e0i1XebwEfv+yGHOodE4dN+f/mrYkQXLw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       '@babel/core': 7.24.6
@@ -5497,7 +5497,7 @@ packages:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       chalk: 4.1.2
-      ember-auto-import: 2.7.2(webpack@5.91.0)
+      ember-auto-import: 2.7.3(webpack@5.91.0)
       ember-cli-babel: 7.26.11
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
@@ -9753,7 +9753,7 @@ packages:
       got: 12.6.1
       registry-auth-token: 5.0.2
       registry-url: 6.0.1
-      semver: 7.5.4
+      semver: 7.6.2
     dev: true
 
   /parent-module@1.0.1:
@@ -10838,7 +10838,7 @@ packages:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
     dependencies:
-      semver: 7.5.4
+      semver: 7.6.2
     dev: true
 
   /semver@5.7.2:
@@ -12117,7 +12117,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.4
+      semver: 7.6.2
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
     dev: true
