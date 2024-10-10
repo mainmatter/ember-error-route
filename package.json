@@ -68,7 +68,7 @@
     "prettier": "2.8.8",
     "qunit": "2.22.0",
     "qunit-dom": "3.2.1",
-    "release-it": "16.3.0",
+    "release-it": "17.8.2",
     "release-it-lerna-changelog": "5.0.0",
     "webpack": "5.95.0"
   },
