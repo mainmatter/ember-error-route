@@ -116,8 +116,8 @@ devDependencies:
     specifier: 2.22.0
     version: 2.22.0
   qunit-dom:
-    specifier: 3.2.1
-    version: 3.2.1
+    specifier: 3.3.0
+    version: 3.3.0
   release-it:
     specifier: 16.3.0
     version: 16.3.0
@@ -10071,8 +10071,8 @@ packages:
       rimraf: 2.7.1
       underscore.string: 3.3.6
 
-  /qunit-dom@3.2.1:
-    resolution: {integrity: sha512-+qSm8zQ7hPA9NijmTDVsUFNGEFP/K+DTymjlsU01O3NhkGtb9rsZRztJXwaiAlmVSX4vSzjydPxpZCRhpWIq4A==}
+  /qunit-dom@3.3.0:
+    resolution: {integrity: sha512-sGPhNbZ/3gPbH3rp7PxnzqXuh6cyN/AG/vO/X9k0IYlsoBLi83MU6PdtSw/KiWLV8X/32jxD6fbeP9vjNAY4Dw==}
     dependencies:
       dom-element-descriptors: 0.5.1
     dev: true
