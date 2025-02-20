@@ -83,7 +83,7 @@
     "demoURL": "https://mainmatter.github.io/ember-error-route/"
   },
   "volta": {
-    "node": "18.20.7",
+    "node": "22.14.0",
     "pnpm": "8.15.9"
   }
 }
