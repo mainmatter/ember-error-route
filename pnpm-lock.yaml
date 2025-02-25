@@ -65,8 +65,8 @@ devDependencies:
     specifier: 1.0.0
     version: 1.0.0
   ember-page-title:
-    specifier: 8.2.4
-    version: 8.2.4(ember-source@5.12.0)
+    specifier: 9.0.1
+    version: 9.0.1(ember-source@5.12.0)
   ember-qunit:
     specifier: 8.1.1
     version: 8.1.1(@ember/test-helpers@3.3.1)(ember-source@5.12.0)(qunit@2.24.1)
@@ -5296,11 +5296,11 @@ packages:
       - supports-color
     dev: true
 
-  /ember-page-title@8.2.4(ember-source@5.12.0):
-    resolution: {integrity: sha512-ZZ912IRItIEfD5+35w65DT9TmqppK+suXJeaJenD5OSuvujUnYl6KxBpyAbfjw4mYtURwJO/TmSe+4GGJbsJ0w==}
+  /ember-page-title@9.0.1(ember-source@5.12.0):
+    resolution: {integrity: sha512-qo3NHJRrCZpYyGr+KkDAQDZ9IFJOFLW9qEKYer2tetSpaL9B2PQmh4KY0XdZY25jxFg8GZ1+DChDSImIbh5yzA==}
     engines: {node: 16.* || >= 18}
     peerDependencies:
-      ember-source: '>= 3.28.0'
+      ember-source: '>= 4.2.0'
     dependencies:
       '@embroider/addon-shim': 1.9.0
       '@simple-dom/document': 1.4.0
@@ -9737,7 +9737,7 @@ packages:
       got: 12.6.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.5.4
+      semver: 7.7.1
     dev: true
 
   /parent-module@1.0.1:
@@ -10859,7 +10859,7 @@ packages:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
     dependencies:
-      semver: 7.5.4
+      semver: 7.7.1
     dev: true
 
   /semver@5.7.2:
@@ -12188,7 +12188,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.4
+      semver: 7.7.1
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
     dev: true
