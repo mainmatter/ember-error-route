@@ -1,6 +1,6 @@
 import { getOwner } from '@ember/application';
 import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
+import { service } from '@ember/service';
 
 /**
  * This is a weird route... but let me explain.
