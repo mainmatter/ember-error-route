@@ -92,8 +92,8 @@ devDependencies:
     specifier: 10.0.2
     version: 10.0.2(eslint@8.57.1)
   eslint-plugin-ember:
-    specifier: 12.5.0
-    version: 12.5.0(@babel/core@7.26.9)(eslint@8.57.1)
+    specifier: 12.7.5
+    version: 12.7.5(@babel/core@7.26.9)(eslint@8.57.1)
   eslint-plugin-node:
     specifier: 11.1.0
     version: 11.1.0(eslint@8.57.1)
@@ -5785,8 +5785,8 @@ packages:
     resolution: {integrity: sha512-Uk/TVLt6Nf6Xoz7C1iYuZjOSdJxe5aaauGRke8JhKeJwD66Y61/pY2FjtLP04Ooq9PwV34bzrkKkU2UZ5FtDRA==}
     dev: true
 
-  /eslint-plugin-ember@12.5.0(@babel/core@7.26.9)(eslint@8.57.1):
-    resolution: {integrity: sha512-DBUzsaKWDVXsujAZPpRir0O7owdlCoVzZmtaJm7g7iQeSrNtcRWI7AItsTqKSsws1XeAySH0sPsQItMdDCb9Fg==}
+  /eslint-plugin-ember@12.7.5(@babel/core@7.26.9)(eslint@8.57.1):
+    resolution: {integrity: sha512-2zLEpu3xcKjykgsKkj8sU2GwdxADFTH5XPBvuIrNBP253JxHSz2P21isUuRB50kGoR2KL+eUHNgV0j7IPCav1w==}
     engines: {node: 18.* || 20.* || >= 21}
     peerDependencies:
       '@typescript-eslint/parser': '*'
