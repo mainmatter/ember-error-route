@@ -101,8 +101,8 @@ devDependencies:
     specifier: 4.2.1
     version: 4.2.1(eslint-config-prettier@10.0.2)(eslint@8.57.1)(prettier@2.8.8)
   eslint-plugin-qunit:
-    specifier: 8.1.2
-    version: 8.1.2(eslint@8.57.1)
+    specifier: 8.2.6
+    version: 8.2.6(eslint@8.57.1)
   loader.js:
     specifier: 4.7.0
     version: 4.7.0
@@ -5853,14 +5853,15 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-qunit@8.1.2(eslint@8.57.1):
-    resolution: {integrity: sha512-2gDQdHlQW8GVXD7YYkO8vbm9Ldc60JeGMuQN5QlD48OeZ8znBvvoHWZZMeXjvoDPReGaLEvyuWrDtrI8bDbcqw==}
+  /eslint-plugin-qunit@8.2.6(eslint@8.57.1):
+    resolution: {integrity: sha512-S1jC/DIW9J8VtNX4uG1vlf5FZVrfQFlcuiYmvTHR2IICUhubHqpWA5o+qS1tujh+81Gs39omKV2D4OXfbSJE5g==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
+    peerDependencies:
+      eslint: '>=8.38.0'
     dependencies:
-      eslint-utils: 3.0.0(eslint@8.57.1)
+      '@eslint-community/eslint-utils': 4.4.1(eslint@8.57.1)
+      eslint: 8.57.1
       requireindex: 1.2.0
-    transitivePeerDependencies:
-      - eslint
     dev: true
 
   /eslint-scope@5.1.1:
