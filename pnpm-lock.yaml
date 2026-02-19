@@ -71,8 +71,8 @@ devDependencies:
     specifier: 8.1.1
     version: 8.1.1(@ember/test-helpers@3.3.1)(ember-source@5.12.0)(qunit@2.24.1)
   ember-resolver:
-    specifier: 11.0.1
-    version: 11.0.1(ember-source@5.12.0)
+    specifier: 13.2.0
+    version: 13.2.0
   ember-source:
     specifier: 5.12.0
     version: 5.12.0(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.98.0)
@@ -5334,19 +5334,8 @@ packages:
       - supports-color
     dev: true
 
-  /ember-resolver@11.0.1(ember-source@5.12.0):
-    resolution: {integrity: sha512-ucBk3oM+PR+AfYoSUXeQh8cDQS1sSiEKp4Pcgbew5cFMSqPxJfqd1zyZsfQKNTuyubeGmWxBOyMVSTvX2LeCyg==}
-    engines: {node: 14.* || 16.* || >= 18}
-    peerDependencies:
-      ember-source: ^4.8.3 || >= 5.0.0
-    peerDependenciesMeta:
-      ember-source:
-        optional: true
-    dependencies:
-      ember-cli-babel: 7.26.11
-      ember-source: 5.12.0(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.98.0)
-    transitivePeerDependencies:
-      - supports-color
+  /ember-resolver@13.2.0:
+    resolution: {integrity: sha512-A+BffoSKC0ngiczbgaz/IOY66ovZVRRHHIDDi+d7so5i0By8xuB4nXgZZ6Dv3u/3WwoUyixgUvb0xTUO+MtupA==}
     dev: true
 
   /ember-rfc176-data@0.3.18:
