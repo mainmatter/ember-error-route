@@ -35,8 +35,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   ember-auto-import:
-    specifier: 2.10.0
-    version: 2.10.0(webpack@5.98.0)
+    specifier: 2.10.1
+    version: 2.10.1(webpack@5.98.0)
   ember-cli:
     specifier: 5.12.0
     version: 5.12.0
@@ -1305,7 +1305,7 @@ packages:
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
       dom-element-descriptors: 0.5.1
-      ember-auto-import: 2.10.0(webpack@5.98.0)
+      ember-auto-import: 2.10.1(webpack@5.98.0)
       ember-cli-babel: 8.2.0(@babel/core@7.26.9)
       ember-cli-htmlbars: 6.3.0
       ember-source: 5.12.0(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.98.0)
@@ -4777,8 +4777,8 @@ packages:
   /electron-to-chromium@1.5.109:
     resolution: {integrity: sha512-AidaH9JETVRr9DIPGfp1kAarm/W6hRJTPuCnkF+2MqhF4KaAgRIcBc8nvjk+YMXZhwfISof/7WG29eS4iGxQLQ==}
 
-  /ember-auto-import@2.10.0(webpack@5.98.0):
-    resolution: {integrity: sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==}
+  /ember-auto-import@2.10.1(webpack@5.98.0):
+    resolution: {integrity: sha512-5K4lYSEBch3DKQn1VElFHDHcHTvhTJnB6aebf24VyIobLL+OMWORcCK1fiwyfPiVABztyuLXH2GiXDweNUtntA==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       '@babel/core': 7.26.9
@@ -5405,7 +5405,7 @@ packages:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       chalk: 4.1.2
-      ember-auto-import: 2.10.0(webpack@5.98.0)
+      ember-auto-import: 2.10.1(webpack@5.98.0)
       ember-cli-babel: 8.2.0(@babel/core@7.26.9)
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
@@ -6867,7 +6867,7 @@ packages:
 
   /glob@5.0.15:
     resolution: {integrity: sha512-c9IPMazfRITpmAAKi22dK1VKxGDX9ehhqfABDriL/lzO92xcUKEJPQHrVA/2YHSNFB4iFlykVmWvwo48nr3OxA==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     dependencies:
       inflight: 1.0.6
       inherits: 2.0.4
@@ -6901,6 +6901,7 @@ packages:
   /glob@9.3.5:
     resolution: {integrity: sha512-e1LleDykUz2Iu+MTYdkSsuWX8lvAjAcs0Xef0lNIu0S2wOAzuTxCJtcd9S3cijlwYF18EsU3rzb8jPVobxDh9Q==}
     engines: {node: '>=16 || 14 >=14.17'}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     dependencies:
       fs.realpath: 1.0.0
       minimatch: 8.0.4
@@ -9733,7 +9734,7 @@ packages:
       got: 12.6.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.5.4
+      semver: 7.7.1
     dev: true
 
   /parent-module@1.0.1:
@@ -10855,7 +10856,7 @@ packages:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
     dependencies:
-      semver: 7.5.4
+      semver: 7.7.1
     dev: true
 
   /semver@5.7.2:
@@ -12184,7 +12185,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.4
+      semver: 7.7.1
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
     dev: true
