@@ -69,7 +69,7 @@ devDependencies:
     version: 8.2.4(ember-source@5.12.0)
   ember-qunit:
     specifier: 8.1.1
-    version: 8.1.1(@ember/test-helpers@3.3.1)(ember-source@5.12.0)(qunit@2.24.1)
+    version: 8.1.1(@ember/test-helpers@3.3.1)(ember-source@5.12.0)(qunit@3.0.0)
   ember-resolver:
     specifier: 11.0.1
     version: 11.0.1(ember-source@5.12.0)
@@ -113,8 +113,8 @@ devDependencies:
     specifier: 2.8.8
     version: 2.8.8
   qunit:
-    specifier: 2.24.1
-    version: 2.24.1
+    specifier: 3.0.0
+    version: 3.0.0
   qunit-dom:
     specifier: 3.4.0
     version: 3.4.0
@@ -3995,6 +3995,11 @@ packages:
     engines: {node: '>=0.1.90'}
     dev: true
 
+  /commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
+    dev: true
+
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
@@ -4002,11 +4007,6 @@ packages:
   /commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
-    dev: true
-
-  /commander@7.2.0:
-    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
-    engines: {node: '>= 10'}
     dev: true
 
   /commander@8.3.0:
@@ -5315,7 +5315,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-qunit@8.1.1(@ember/test-helpers@3.3.1)(ember-source@5.12.0)(qunit@2.24.1):
+  /ember-qunit@8.1.1(@ember/test-helpers@3.3.1)(ember-source@5.12.0)(qunit@3.0.0):
     resolution: {integrity: sha512-nT+6s74j3BKNn+QQY/hINC3Xw3kn0NF0cU9zlgVQmCBWoyis1J24xWrY2LFOMThPmF6lHqcrUb5JwvBD4BXEXg==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
@@ -5327,7 +5327,7 @@ packages:
       '@embroider/macros': 1.16.11
       ember-cli-test-loader: 3.1.0
       ember-source: 5.12.0(@glimmer/component@1.1.2)(rsvp@4.8.5)(webpack@5.98.0)
-      qunit: 2.24.1
+      qunit: 3.0.0
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - '@glint/template'
@@ -9273,8 +9273,8 @@ packages:
   /node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
 
-  /node-watch@0.7.3:
-    resolution: {integrity: sha512-3l4E8uMPY1HdMMryPRUAl+oIHtXtyiTlIiESNSVSNxcPfzAFzeTbXFQkZfAwBbo0B1qMSG8nUABx+Gd+YrbKrQ==}
+  /node-watch@0.7.4:
+    resolution: {integrity: sha512-RinNxoz4W1cep1b928fuFhvAQ5ag/+1UlMDV7rbyGthBIgsiEouS4kvRayvvboxii4m8eolKOIBo3OjDqbc+uQ==}
     engines: {node: '>=6'}
     dev: true
 
@@ -10198,13 +10198,13 @@ packages:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
     dev: true
 
-  /qunit@2.24.1:
-    resolution: {integrity: sha512-Eu0k/5JDjx0QnqxsE1WavnDNDgL1zgMZKsMw/AoAxnsl9p4RgyLODyo2N7abZY7CEAnvl5YUqFZdkImzbgXzSg==}
-    engines: {node: '>=10'}
+  /qunit@3.0.0:
+    resolution: {integrity: sha512-g4Fgw3uhqwdjzhUDa0bYGQyGzs1xRcIY/32c5zUydnnrgzcA8updYF9nIeUis+PfwuqX6UB/4JpCNMnrVBY6iA==}
+    engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      commander: 7.2.0
-      node-watch: 0.7.3
+      commander: 12.1.0
+      node-watch: 0.7.4
       tiny-glob: 0.2.9
     dev: true
 
